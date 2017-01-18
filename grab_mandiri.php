@@ -88,8 +88,8 @@ curl_setopt($ch, CURLOPT_POST, FALSE);
 $result = curl_exec($ch);
 
 
-//process data
-$resultMutasi = file_get_contents("./mandiri_mutasi2.html"); //dummy
+//process data for dummy data
+//$resultMutasi = file_get_contents("./mandiri_mutasi2.html"); //dummy
 
 $blockMutasi = getBlockInside($resultMutasi,'<!-- Start of Item List -->','</table>').'</table>';
 $blockMutasi = getBlock($blockMutasi,'<tr height="25">','</table>');
